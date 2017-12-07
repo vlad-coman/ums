@@ -8,9 +8,7 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Statement;
 
-/**
- * Created by vh on 11/16/17.
- */
+
 public abstract class ListEntityRoute extends JSONRoute {
 
     public abstract String[] getAuthorizedRoles();

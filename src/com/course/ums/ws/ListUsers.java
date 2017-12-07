@@ -9,9 +9,6 @@ import spark.Response;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-/**
- * Created by vh on 11/2/17.
- */
 public class ListUsers extends JSONRoute {
 
     @Override
