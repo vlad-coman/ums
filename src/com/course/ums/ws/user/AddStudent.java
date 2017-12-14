@@ -33,8 +33,7 @@ public class AddStudent extends AddEntityRoute {
         PreparedStatement ps = DBManager.getConnection().prepareStatement("INSERT INTO students(id, gender, birth_date) VALUES(?, ?, ?)");
         ps.setInt(1, id);
         ps.setString(2, request.getString("gender"));
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-        Date birthDate = df.parse(request.getString("birth_date"));
+        Date birthDate = DBManager.DF.parse(request.getString("birth_date"));
         ps.setDate(3, new java.sql.Date(birthDate.getTime()));
         ps.execute();
 

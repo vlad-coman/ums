@@ -3,36 +3,38 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-  
 </head>
+
 <body>
 
 
-<div class="flashMessage" style="background: #7FFF00"> 
+</div>
+  
+  <button class="btn btn-default" onclick="App.redirect('students.html')">Students</button>
+  <button class="btn btn-default" onclick="App.redirect('teachers.html')">Teachers</button>
+  <button class="btn btn-default" onclick="App.redirect('courses.html')">Courses</button>
+  <button class="btn btn-default" onclick="App.redirect('semesters.html')">Semesters</button>
+  <button class="btn btn-default" onclick="App.redirect('groups.html')">Groups</button>
+  <button class="btn btn-default" onclick="App.redirect('list_view_exams.html')">Exams</button>
+
+      <div>
+        <button class="btn btn-default" onclick="App.redirect('newStudent.html')">Add new</button>
+          <button class="btn btn-default" onclick="App.redirect('newTeacher.html')">Add new</button>
+          <button class="btn btn-default" onclick="App.redirect('newCourse.html')">Add new</button>
+          <button class="btn btn-default" onclick="App.redirect('newSemester.html')">Add new</button>
+          <button class="btn btn-default" onclick="App.redirect('newGroup.html')">Add new</button>
+          <button class="btn btn-default" onclick="App.redirect('newExam.html')">Add new</button>
+
+      </div>
 
 </div>
-<button class="btn btn-default" onclick="App.redirect('students.html')">Students</button>
-<button class="btn btn-default" onclick="App.redirect('teachers.html')">Teachers</button>
-<button class="btn btn-default" onclick="App.redirect('courses.html')">Courses</button>
-<button class="btn btn-default" onclick="App.redirect('semesters.html')">Semesters</button>
-<button class="btn btn-default" onclick="App.redirect('groups.html')">Groups</button>
 
-	
-<div>
-	<button class="btn btn-default" onclick="App.redirect('newStudent.html')">Add new</button>
-    <button class="btn btn-default" onclick="App.redirect('newTeacher.html')">Add new</button>
-    <button class="btn btn-default" onclick="App.redirect('newCourse.html')">Add new</button>
-    <button class="btn btn-default" onclick="App.redirect('newSemester.html')">Add new</button>
-    <button class="btn btn-default" onclick="App.redirect('newGroup.html')">Add new</button>
 
-</div>
-
-</div>
 <div id="grid">
 
 </div>
-  <script src="app.js"></script>
-  <script src="teachers.js" ></script>
+  
+<script src="app.js"></script>
+<script src="teachers.js" ></script>
 </body>
 </html>

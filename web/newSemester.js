@@ -11,8 +11,8 @@ $(document).ready(function () {
             url: App.constants.baseApiPath + 'semester/add',
             success: function(resp) {
                 if (resp.id) {
+                    App.ss.addMessage("Semester successfully saved!");
                     App.redirect('semesters.html');
-                    App.ss.set('message', "Saved!!!!")
                 }
             },
             error: function(e) {

@@ -3,5 +3,3 @@ App.utils.createGrid({
     columns: ['last_name','first_name', 'email'],
     target: '#grid'
 });
-
-// 

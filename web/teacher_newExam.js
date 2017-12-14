@@ -1,18 +1,18 @@
 $(document).ready(function () {
-    $('#newCourse').on('submit',function (event) {
+    $('#newExam').on('submit',function (event) {
         event.preventDefault();
 
-        var payload = App.utils.serializeFrom('#newCourse');
+        var payload = App.utils.serializeFrom('#newExam');
         console.log(payload);
 
         jQuery.ajax({
             method: "POST",
             data: JSON.stringify(payload),
-            url: App.constants.baseApiPath + 'course/add',
+            url: App.constants.baseApiPath + 'exam/add',
             success: function(resp) {
                 if (resp.id) {
-                    App.ss.addMessage("Course successfully saved!");
-                    App.redirect('courses.html');
+                    App.ss.addMessage("Exam successfully saved!");
+                    App.redirect('teacher_role.html');
                 }
             },
             error: function(e) {

@@ -11,8 +11,8 @@ $(document).ready(function () {
             url: App.constants.baseApiPath + 'user/teacher/add',
             success: function(resp) {
                 if (resp.id) {
+                    App.ss.addMessage("Teacher successfully saved!");
                     App.redirect('teachers.html');
-                    App.ss.set('message', "Saved!!!!")
                 }
             },
             error: function(e) {
@@ -21,3 +21,5 @@ $(document).ready(function () {
         })
     })
 })
+
+

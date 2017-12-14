@@ -11,8 +11,8 @@ $(document).ready(function () {
             url: App.constants.baseApiPath + 'group/add',
             success: function(resp) {
                 if (resp.id) {
+                    App.ss.addMessage("Group successfully saved!");
                     App.redirect('groups.html');
-                    App.ss.set('message', "Saved!!!!")
                     
                     
                   }

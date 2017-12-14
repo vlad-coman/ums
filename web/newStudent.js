@@ -11,8 +11,8 @@ $(document).ready(function () {
             url: App.constants.baseApiPath + 'user/student/add',
             success: function(resp) {
                 if (resp.id) {
+                    App.ss.addMessage("Student successfully saved!");
                     App.redirect('students.html');
-                    App.ss.set('message', "Saved!!!!")
                 }
             },
             error: function(e) {

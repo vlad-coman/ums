@@ -1,5 +1,8 @@
 package com.course.ums.auth;
 
+/**
+ * Created by vh on 11/9/17.
+ */
 public class AuthManager {
 
     public static final String ROLE_ADMIN = "administrator";
